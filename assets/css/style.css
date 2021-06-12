@@ -42,20 +42,11 @@ body::-webkit-scrollbar-thumb{
 	height: calc(100vh/1.8);
 }
 
-/* slider nav */
-.owl-nav>button:focus{
+.slide-1 .owl-nav button:focus{
 	outline: none;
 }
 
-.owl-theme .owl-nav{
-	margin-top: 0;
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover{
-	background-color: transparent;
-}
-
-.owl-prev{
+.slide-1 .owl-nav .owl-prev{
 	position: absolute;
 	top: 50%;
   left: 0;
@@ -63,7 +54,18 @@ body::-webkit-scrollbar-thumb{
 	height: 100%;
 }
 
-.owl-next{
+.slide-1 .owl-nav .owl-prev:hover i{
+	color: var(--warna1);
+	font-size: 5rem;
+}
+
+.slide-1 .owl-nav .owl-prev i{
+	font-size: 3rem;
+	color: white;
+	transition: .2s;
+}
+
+.slide-1 .owl-nav .owl-next{
 	position: absolute;
 	top: 50%;
   right: 0;
@@ -71,56 +73,49 @@ body::-webkit-scrollbar-thumb{
 	height: 100%;
 }
 
-.owl-prev>i{
+.slide-1 .owl-nav .owl-next:hover i{
+	color: var(--warna1);
+	font-size: 5rem;
+}
+
+.slide-1 .owl-nav .owl-next i{
 	font-size: 3rem;
 	color: white;
-	transition: .1s;
-}
-
-.owl-next>i{
-	font-size: 3rem;
-	color: white;
-	transition: .1s;
-}
-
-.owl-prev:hover i{
-	font-size: 4rem;
-	color: var(--warna2);
-	transition: .3s;
-}
-
-.owl-next:hover i{
-	font-size: 4rem;
-	color: var(--warna2);
 	transition: .2s;
 }
 
-/* slider-dots */
-.owl-dots{
+/* Slider dots */
+.slide-1 .owl-dots{
 	position: absolute;
-	bottom: 0;
-	left: 0;
 	width: 100%;
 	text-align: center;
-	padding-bottom: 2rem;
+	bottom: 0;
+	padding-bottom: 1.5rem;
 }
 
-.owl-dot:focus{
+.slide-1 .owl-dots button:focus{
 	outline: none;
 }
 
-.owl-theme .owl-dots .owl-dot.active span{
-	background-color: var(--warna2);
-	width: 20px;
+.slide-1 .owl-dots .owl-dot{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--warna5);
+	margin: 0 .5rem;
+	transition: .5s;
+	opacity: 50%;
 }
 
-.owl-theme .owl-dots .owl-dot:hover span{
-	background-color: var(--warna2);
+.slide-1 .owl-dots .owl-dot.active{
+	width: 30px;
+	height: 10px;
+	border-radius: 20px;
+	background-color: var(--warna4);
+	margin: 0 .5rem;
+	opacity: 100%;
 }
 
-.owl-theme .owl-dots .owl-dot span{
-	background-color: white;
-}
 
 .bg-warna1{
 	background-color: var(--warna1);
