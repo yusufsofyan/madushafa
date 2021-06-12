@@ -1,0 +1,196 @@
+/* variabel */
+:root{
+	--warna1: #f9ed6f;
+	--warna2: #f9ed4e;
+	--warna3: #f6b042;
+	--warna4: #58595B;
+	--warna5: #231F20;
+	--warna6: #05D769;
+}
+
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+.dark{
+	background-color: var(--warna5);
+	color: white;
+}
+
+.default{
+	background-color: white;
+	color: var(--warna5);
+}
+
+/* side scroll */
+body::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: transparent
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: var(--warna4);
+	/* border-radius: 5px; */
+}
+
+/* slider items */
+.slide-items{
+	height: calc(100vh/1.8);
+}
+
+/* slider nav */
+.owl-nav>button:focus{
+	outline: none;
+}
+
+.owl-theme .owl-nav{
+	margin-top: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover{
+	background-color: transparent;
+}
+
+.owl-prev{
+	position: absolute;
+	top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+	height: 100%;
+}
+
+.owl-next{
+	position: absolute;
+	top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+	height: 100%;
+}
+
+.owl-prev>i{
+	font-size: 3rem;
+	color: white;
+	transition: .1s;
+}
+
+.owl-next>i{
+	font-size: 3rem;
+	color: white;
+	transition: .1s;
+}
+
+.owl-prev:hover i{
+	font-size: 4rem;
+	color: var(--warna2);
+	transition: .3s;
+}
+
+.owl-next:hover i{
+	font-size: 4rem;
+	color: var(--warna2);
+	transition: .2s;
+}
+
+/* slider-dots */
+.owl-dots{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.owl-dot:focus{
+	outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+	background-color: var(--warna2);
+	width: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span{
+	background-color: var(--warna2);
+}
+
+.owl-theme .owl-dots .owl-dot span{
+	background-color: white;
+}
+
+.bg-warna1{
+	background-color: var(--warna1);
+}
+.bg-warna2{
+	background-color: var(--warna2);
+}
+.bg-warna3{
+	background-color: var(--warna3);
+}
+.bg-warna4{
+	background-color: var(--warna4);
+}
+.bg-warna5{
+	background-color: var(--warna5);
+}
+.bg-warna6{
+	background-color: var(--warna6);
+}
+.hover\:bg-warna1:hover{
+	background-color: var(--warna1);
+}
+.hover\:bg-warna2:hover{
+	background-color: var(--warna2);
+}
+.hover\:bg-warna3:hover{
+	background-color: var(--warna3);
+}
+.hover\:bg-warna4:hover{
+	background-color: var(--warna4);
+}
+.hover\:bg-warna5:hover{
+	background-color: var(--warna5);
+}
+.text-warna1{
+	color: var(--warna1);
+}
+.text-warna2{
+	color: var(--warna2);
+}
+.text-warna3{
+	color: var(--warna3);
+}
+.text-warna4{
+	color: var(--warna4);
+}
+.text-warna5{
+	color: var(--warna5);
+}
+.hover\:text-warna1:hover{
+	color: var(--warna1);
+}
+.hover\:text-warna2:hover{
+	color: var(--warna2);
+}
+.hover\:text-warna3:hover{
+	color: var(--warna3);
+}
+.hover\:text-warna4:hover{
+	color: var(--warna4);
+}
+.hover\:text-warna5:hover{
+	color: var(--warna5);
+}
+.bg-gradient-madu{
+	background: rgb(249,237,111);
+	background: linear-gradient(90deg, rgba(249,237,111,1) 0%, rgba(249,237,78,1) 30%, rgba(246,176,66,1) 100%);
+}
+.border-b-warna{
+	border-color: var(--warna5);
+}
+
+/* Your Code Start here */
